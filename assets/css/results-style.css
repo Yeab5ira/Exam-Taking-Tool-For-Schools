@@ -1,0 +1,81 @@
+body{
+    background: #eeeeee;
+    padding: 0px;
+    margin: 0px;
+    font-family: montserrat;
+    height: 100vh;
+
+}
+.body-container{
+    width: 100%;
+    height: 100vh;
+    background-color: #eeeeee;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.subject-container{
+    height: 40%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+}
+.subject{
+    padding: 10px;
+    border-radius: 2rem;
+    width: 15%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #eeeeee;
+    box-shadow: 5px 5px 10px 0px #aaaaaa, -5px -5px 10px 1px white; 
+    transition: all 1s ease;
+
+}
+.subject:hover{
+    box-shadow: inset 5px 5px 10px 0px #aaaaaa,inset  -5px -5px 10px 1px white;
+    transition: all 0.5s ease;
+    background: #dddddd;
+    transform: translateY(-10px);
+}
+.subject hr{
+    width: 100%;
+}
+
+.english {
+    color: darkslateblue;
+}
+.math {
+    color: goldenrod;
+}
+.biology {
+    color: lightseagreen;
+}
+.physics {
+    color: indigo;
+}
+.chemistry {
+    color: orangered;    
+}
+
+@media screen and (max-width: 1300px) {
+    .body-container{
+        padding-top: 30vh;
+    }
+    .subject-container{
+        height: auto;
+        flex-direction: column;
+        justify-content: normal;
+        align-items: center;
+    }
+    .subject {
+        width: 90%;
+        margin-top: 8vh;
+    }
+}

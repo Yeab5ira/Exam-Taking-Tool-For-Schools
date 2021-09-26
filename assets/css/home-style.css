@@ -1,0 +1,150 @@
+body{
+    background: #eeeeee;
+    padding: 0px;
+    margin: 0px;
+    font-family: montserrat;
+}
+.body-container{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    margin: 0px;
+}
+.logo-container{
+    color: #111111;
+    /* width: 30%; */
+    display: flex;
+    align-items: center;
+    font-size: large;
+    height: 100%;
+}
+.logo-container img {
+    height: 100%;
+}
+.navbar-container{
+    display: flex;
+    align-items: center;
+    /* width: 50%; */
+    height: 80px;
+    background-color: white;
+}
+
+.signin-container{
+    width: 50%;
+    height: 100%;
+    background: #eeeeee;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.signin-form-container{
+    /* border: 1px solid black; */
+    padding: 50px 10px 50px 10px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 0.5rem;
+    box-shadow: 5px 5px 10px 0px #aaaaaa, -5px -5px 10px 1px white; 
+}
+
+.signin-table{
+    border-spacing: 20px;
+}
+[name=signin] {
+    background-color: #eeeeee !important;
+    border: none;
+    float: right;
+    padding: 10px;
+    width: 100%;
+    /* font-family: 'Times New Roman', Times, serif; */
+    font-weight: bold;
+    font-size: large;
+    box-shadow: 1px 2px 5px 0px #aaaaaa, -1px -2px 5px 2px white;
+    transition: all 0.5s ease;
+    border-radius: 1rem;
+}
+[name=signin]:hover{
+    /* background-color: #cccccc; */
+    box-shadow: inset 1px 2px 5px 0px #aaaaaa, inset -1px -2px 5px 2px white;
+    transition: all 0.3s ease;
+}
+.signup-container{
+    width: 50%;
+    height: 100%;
+    background : #252525;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.signup-form-container{
+    /* border: 1px solid black; */
+    padding: 50px 10px 50px 10px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 0.5rem;
+    box-shadow: 5px 5px 10px 0px #111111, -5px -5px 10px 2px #333333; 
+}
+.signup-table{
+    border-spacing: 20px;
+}
+[name=signup] {
+    background-color: #252525 !important;
+    color: white;
+    border: none;
+    float: right;
+    padding: 10px;
+    width: 100%;
+    /* font-family: 'Times New Roman', Times, serif; */
+    font-weight: bold;
+    font-size: large;
+    box-shadow: 1px 2px 5px 0px #444444, -1px -2px 5px 2px #111111;
+    transition: all 0.5s ease;
+    border-radius: 1rem;
+}
+[name=signup]:hover{
+    /* background-color: #cccccc; */
+    box-shadow: inset 1px 2px 5px 0px #444444, inset -1px -2px 5px 2px #111111;
+    transition: all 0.3s ease;
+}
+input {
+    border: none;
+    background: transparent;
+    border-bottom:1px solid #777777 !important;
+    
+}
+.signup-container input{
+    color: white;
+}
+input:active{
+    background: none !important;
+}
+
+
+@media screen and (max-width: 1300px) {
+    .body-container{
+        flex-direction: column;
+        overflow: auto;
+        align-items: center;
+        /* justify-content: center; */
+    }
+    .signin-container{
+        width: 100%;
+        padding-bottom: 50px;
+        padding-top: 50px;
+        min-height: max-content;
+    }
+    .signup-container{
+        width: 100%;
+        padding-bottom: 50px;
+        padding-top: 50px;
+        min-height: max-content;
+    }
+}
